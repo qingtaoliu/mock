@@ -1,0 +1,23 @@
+{
+  "name": "mock",
+  "version": "0.0.1",
+  "description": "简单mock接口",
+  "main": "index.js",
+  "scripts": {
+    "mock": "mock-api serve data",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingtaoliu/mock.git"
+  },
+  "author": "liuqingtao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qingtaoliu/mock/issues"
+  },
+  "devDependencies": {
+    "mock-api": "^0.1.5"
+  },
+  "homepage": "https://github.com/qingtaoliu/mock#readme"
+}

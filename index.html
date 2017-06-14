@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <button type="button" name="button" onclick="fun()">请求</button>
+  <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function fun() {
+      $.ajax({
+        url: 'http://localhost:10086/post/_data',
+        type: 'post',
+        data: {},
+        dataType: 'json',
+        success: function(data) {
+          alert(0)
+          alert(data.data.asd)
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>
