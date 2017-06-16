@@ -4,7 +4,7 @@ module.exports = [
     url:'/user/_data',
     response:{
       data:{
-        'name':'小明',
+        'name':'小明 ',
         'sex':'男',
         'age':'1000'
       },

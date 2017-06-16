@@ -9,18 +9,27 @@
 <body>
   <button type="button" name="button" onclick="fun()">请求</button>
   <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script type="text/javascript">
     function fun() {
-      $.ajax({
-        url: 'http://localhost:10086/post/_data',
-        type: 'post',
-        data: {},
-        dataType: 'json',
-        success: function(data) {
-          alert(0)
-          alert(data.data.asd)
-        }
-      })
+      // $.ajax({
+      //   url: 'http://localhost:10086/post/_data',
+      //   type: 'post',
+      //   data: {},
+      //   dataType: 'json',
+      //   success: function(data) {
+      //     alert(0)
+      //     alert(data.data.asd)
+      //   }
+      // })
+      axios.post('http://localhost:10086/post/_data')
+        .then(function(response) {
+          var data = response.data;
+          console.log(data);
+        })
+        .catch(function(err) {
+          console.log(err);
+        });
     }
   </script>
 </body>
